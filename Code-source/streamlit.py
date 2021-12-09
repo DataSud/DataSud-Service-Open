@@ -15,10 +15,10 @@ from streamlit import caching
 import base64
 import psycopg2
 
-# HOST = "postgresql.lab.datasud.fr"
-# USER = "datasud"
-# PASSWORD = "J44kvP8)?jeFj4p"
-# DATABASE = "calculateur"
+# HOST = "127.0.0.1"
+# USER = "xxx"
+# PASSWORD = "xxxx"
+# DATABASE = "xxx"
 # # Open connection
 # conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 # # Open a cursor to send SQL commands
@@ -114,10 +114,10 @@ if st.sidebar.button("Enregistrer les saisies"):
     df_side = pd.DataFrame(get_data_side())
 
     conn_side = psycopg2.connect(
-        host="postgresql.lab.datasud.fr",
-        user="datasud",
-        password="SmartRegion13!",
-        database="calculateur"
+        host="xxx",
+        user="xxx",
+        password="xxx",
+        database="xxx"
         )
     cursor = conn_side.cursor()
     cols = ",".join([str(i) for i in df_side.columns.tolist()])
@@ -933,10 +933,10 @@ if validate:
 
 
     conn_add_data = psycopg2.connect(
-        host="postgresql.lab.datasud.fr",
-        user="datasud",
-        password="SmartRegion13!",
-        database="calculateur"
+        host="xxx",
+        user="xxx",
+        password="xxx",
+        database="xxx"
         )
     cursor = conn_add_data.cursor()
     cols = ",".join([str(i) for i in df_gestion_dechets.columns.tolist()])
