@@ -60,10 +60,10 @@ name_manif_input = st.sidebar.text_input("Nom de la manifestation sportive")
 #connection au serveur SQL
 # conn = psycopg2.connect("host=%s dbname=%s user=%s password=%s" % (HOST, DATABASE, USER, PASSWORD))
 conn_ville = psycopg2.connect(
-    host="postgresql.lab.datasud.fr",
-    user="datasud",
-    password="SmartRegion13!",
-    database="calculateur"
+    host="xxx",
+    user="xxx",
+    password="xxx",
+    database="xxx"
     )
 #appel du dataframe Ville
 df_ville = pd.read_sql("SELECT * FROM public.ville",conn_ville)    
