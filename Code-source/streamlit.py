@@ -131,10 +131,10 @@ if st.sidebar.button("Enregistrer les saisies"):
 
 
 conn_id_assoc = psycopg2.connect(
-    host="postgresql.lab.datasud.fr",
-    user="datasud",
-    password="SmartRegion13!",
-    database="calculateur"
+    host="xxx",
+    user="xxx",
+    password="xxx",
+    database="xxx"
     )
 #appel du dataframe Ville
 id_asso = pd.read_sql("SELECT MAX(id_information_structure) FROM public.information_structure",conn_id_assoc)    
